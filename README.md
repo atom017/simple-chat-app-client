@@ -1,3 +1,10 @@
+<h1>Simple Chat App</h1>
+<h3><a href="https://nf-simple-chat-app.netlify.app/"></a></h3>
+
+## Overview
+
+![screenshot](https://github.com/atom017/simple-chat-app-client/blob/main/public/chat-app.png)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
