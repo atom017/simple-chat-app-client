@@ -19,7 +19,7 @@ const Chat = () => {
   
   useEffect(() =>{
     const {name,room} = queryString.parse(window.location.search);
-    socket = io(SERVER);
+    socket = io(SERVER,{ transports: ['websocket', 'polling', 'flashsocket']} );
     setName(name);
     setRoom(room);
    
@@ -37,6 +37,7 @@ const Chat = () => {
 
   useEffect(() =>{
     socket.on('message', (message) =>{
+      
       setMessages([...messages,message])
     })
 
@@ -49,6 +50,7 @@ const Chat = () => {
   const sendMessage = (e) =>{
     e.preventDefault();
     if(message){
+      console.log(message);
       socket.emit('sendMessage',message,() =>{
         setMessage('')
       })
