@@ -1,0 +1,49 @@
+.infoBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #2979FF;
+    border-radius: 4px 4px 0 0;
+    height: 60px;
+    width: 100%;
+  }
+  
+  .leftInnerContainer {
+    flex: 0.5;
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+    
+  }
+
+  
+  .rightInnerContainer {
+    display: flex;
+    flex: 0.5;
+    justify-content: flex-end;
+    margin-right: 5%;
+  }
+  
+  .onlineIcon {
+    margin-right: 5%;
+    color:#0c4641;
+   
+  }
+
+  .leaveBtn{
+    background-color: #fff;
+    color:#2979FF;
+    outline: none;
+    border:none;
+    padding:6px;
+  }
+
+  .roomName{
+    color:#fff;
+  }
+
+  @media (min-width: 600px) and (max-width: 1200px){
+    .activeUsers{
+      display:none;
+    }
+  }

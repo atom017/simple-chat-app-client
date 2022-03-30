@@ -1,0 +1,55 @@
+.usersContainer{
+    
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+    border-bottom:1px solid #cccccc;
+    display:flex;
+    align-items: center;
+   
+  }
+
+.onlineHeader{
+  height: 30px;
+  
+  background: #2979FF;
+  color:#fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  padding:0 0.2rem;
+}
+
+.closeUsers{
+  margin-left: auto;
+}
+.userList{
+ 
+ display: flex;
+ list-style: none;
+ padding:0;
+ overflow: auto;
+ margin:0;
+
+}
+
+.userItem{
+  border-radius: 5px;
+  display:block;
+  color: #fff;
+  padding: 0.3rem;
+  background-color: #0c4641;
+  margin:0 0.3rem;
+}
+
+.profileImg{
+  color:#fff;
+  display: inline;
+  margin-right: 0.2rem;
+}
+
+  @media (min-width: 250px) and (max-width: 600px){
+   
+   
+  }
+
