@@ -15,8 +15,8 @@ const Chat = () => {
   const [message,setMessage] = useState('')
   const [messages,setMessages] = useState([]);
   const [users,setUsers] = useState(null);
-  //const SERVER = 'https://hk-simple-chat-app.herokuapp.com/'
-  const SERVER = 'http://localhost:5000'
+  const SERVER = 'https://hk-simple-chat-app.herokuapp.com/'
+ 
   
   useEffect(() =>{
     const {name,room} = queryString.parse(window.location.search);
