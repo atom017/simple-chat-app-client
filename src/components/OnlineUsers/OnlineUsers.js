@@ -1,13 +1,13 @@
 import React from 'react'
 import './OnlineUsers.css'
 
-const OnlineUsers = ({users}) => {
+const OnlineUsers = ({users,activeOpen,setActiveOpen}) => {
   
   return (
-    <div className='usersContainer'>
+    <div className={activeOpen ? 'usersContainer active':'usersContainer'}>
       <header className='onlineHeader'>
-        Online
-        
+        <h4>Active</h4>
+        {activeOpen ?<i onClick={() => setActiveOpen(false)} className="fa-solid fa-circle-xmark"></i>: null}
       </header>
       {users ? 
       (

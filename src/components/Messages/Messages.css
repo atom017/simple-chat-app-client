@@ -2,5 +2,19 @@
     padding: 5% 0;
     overflow: auto;
     flex: auto;
+    position: relative;
   }
 
+  .openUsers{
+    position:absolute;
+    top:0;
+    left:0;
+    
+  }
+
+
+@media (min-width: 600px){
+  .openUsers{
+    display: none;
+  }
+}

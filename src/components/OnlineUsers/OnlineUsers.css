@@ -1,23 +1,22 @@
 .usersContainer{
-    
     background-color: #fff;
-    border-top: 1px solid #ccc;
-    border-bottom:1px solid #cccccc;
-    display:flex;
-    align-items: center;
-   
+    border-right:2px solid #cccccc;
+    padding:0 5px;
+    width:25%;
+    
   }
 
 .onlineHeader{
   height: 30px;
   
-  background: #2979FF;
-  color:#fff;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   font-weight: bold;
   padding:0 0.2rem;
+}
+
+.onlineHeader h4{
+  margin:0;
 }
 
 .closeUsers{
@@ -26,6 +25,7 @@
 .userList{
  
  display: flex;
+ flex-direction: column;
  list-style: none;
  padding:0;
  overflow: auto;
@@ -39,7 +39,7 @@
   color: #fff;
   padding: 0.3rem;
   background-color: #0c4641;
-  margin:0 0.3rem;
+  margin-bottom: 1rem;
 }
 
 .profileImg{
@@ -50,6 +50,19 @@
 
   @media (min-width: 250px) and (max-width: 600px){
    
-   
+   .usersContainer{
+    display:none;
+   }
+
+   .usersContainer.active{
+     position:absolute;
+     top:0;
+     z-index:4;
+     display: flex;
+     flex-direction: column;
+    padding:0 5px;
+    width:40%;
+    height: 100%;
+   }
   }
 

@@ -15,6 +15,7 @@ const Chat = () => {
   const [message,setMessage] = useState('')
   const [messages,setMessages] = useState([]);
   const [users,setUsers] = useState(null);
+  const [isActiveOpen,setisActiveOpen] = useState(false)
   const SERVER = 'https://hk-simple-chat-app.herokuapp.com/'
  
   
@@ -62,15 +63,19 @@ const Chat = () => {
   return (
     <div className='outerContainer'>
      
-      <div className='container'>
-      
+      <div className='innerContainer'>
         <InfoBar room ={room} />
-        <OnlineUsers users={users} />
-        <Messages messages={messages} name={name}/>
-        <Input message={message} setMessage={setMessage} sendMessage={sendMessage}/>
+        <div className='container'>
         
+          <OnlineUsers users={users} activeOpen={isActiveOpen} setActiveOpen={setisActiveOpen} />
+          <div className='messagesInfo'>
+          <Messages messages={messages} name={name} activeOpen={isActiveOpen} setActiveOpen={setisActiveOpen}/>
+          <Input message={message} setMessage={setMessage} sendMessage={sendMessage}/>
+          </div>
+        
+        </div>
       </div>
-     
+        
     </div>
   )
 }
