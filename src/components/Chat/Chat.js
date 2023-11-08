@@ -16,7 +16,9 @@ const Chat = () => {
   const [messages,setMessages] = useState([]);
   const [users,setUsers] = useState(null);
   const [isActiveOpen,setisActiveOpen] = useState(false)
-  const SERVER = 'https://hk-simple-chat-app.herokuapp.com/'
+  // const SERVER = 'https://hk-simple-chat-app.herokuapp.com/'
+
+  const SERVER = 'https://chat-app-backend-ga3o.onrender.com/'
  
   
   useEffect(() =>{
